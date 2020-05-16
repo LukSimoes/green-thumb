@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Green Thumb</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="section-one">
+        <header>
+            <div class="container" data-flex="justify-between">
+                <a href="#" class="logo slideInDown" data-animation>
+                    <img src="../public/images/logo.svg" alt="Logo green Thumb">
+                </a>
+            </div>
+        </header>
+        <div class="container container-search">
+            <h1 data-animation-delay=".8s" data-animation="slideInLeft">
+                Find your next <br>green friend
+            </h1>
+            <div class="filters">
+                <div class="box-filter" data-animation-delay="1.2s" data-animation="fadeIn">
+                    <div class="icon">
+                        <img src="../public/images/sun.png" alt="Sun">
+                    </div>
+                    <div class="text">
+                        <b>1.</b> Set the amount of <b>sunlight</b> <br>your plant will get.
+                    </div>
+                    <div class="box-select">
+                        <select name="sunlight" id="sunlight">
+                          <option value="" disabled selected>Select...</option>
+                          <option value="hight">Hight</option>
+                          <option value="low">Low</option>
+                          <option value="no">No</option>
+                       
+                        </select>
+                    </div>
+                </div>
+                <div class="box-filter" data-animation-delay="1.4s" data-animation="fadeIn">
+                    <div class="icon">
+                        <img src="../public/images/wateringcan.png" alt="Wateringcan">
+                    </div>
+                    <div class="text">
+
+                        <b>2.</b> How often do you want to<br> <b>water</b> your plant?
+                    </div>
+                    <div class="box-select">
+                        <select name="sprinkle" id="sprinkle">
+                          <option value="" disabled selected>Select...</option>                          
+                          <option value="daily">Daily</option>
+                          <option value="regularly">Regularly</option>
+                          <option value="rarely">Rarely</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box-filter" data-animation-delay="1.6s" data-animation="fadeIn">
+                    <div class="icon">
+                        <img src="../public/images/dog.png" alt="Sun">
+                    </div>
+                    <div class="text">
+                        <b>3.</b> Do you have pets? Do<br> they <b>chew</b> plants?
+                    </div>
+                    <div class="box-select">
+                        <select name="pet" id="pet">
+                          <option value="" disabled selected>Select...</option>
+                          <option value="true">True</option>
+                          <option value="false">False</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-two" data>
+        <div class="container container-no-result slideInLeft" data-animation data-animation-delay="1.9s" id="container-no-result">
+            <div class="text ">
+                <div class="title">No results yet…</div>
+                <div class="subtitle">Use the filters above to find<br> the plant that best fits your<br> environment :) </div>
+            </div>
+            <div class="cartoon ">
+                <img class="img-responsive" src="../public/images/illustration.png" alt="">
+            </div>
+        </div>
+
+        <div class="container container-itens no-show" id="container-itens">
+            <div class="icon slideInRight" data-animation>
+                <img src="../public/images/pick.svg" alt="">
+            </div>
+            <h1 class="slideInRight" data-animation>Our picks for you</h1>
+            <div class="itens grid" id="itens">
+
+
+            </div>
+            <button type="button" class="button" id="go-top">
+              <img  src="../public/images/seta.svg" alt=""> back to the top
+            </button>
+        </div>
+    </div>
+
+    <div class="overlay" id="alert" data-type="alert">
+        <div class="modal">
+            <header class="modal--header">
+                <h3 class="modal--title">Ops :(</h3>
+            </header>
+            <div class="modal--content"></div>
+            <footer class="modal--footer">
+                <button id='button-close' data-modal-close>Close</button>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
